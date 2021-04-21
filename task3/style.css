@@ -1,0 +1,88 @@
+body{
+   margin: 0;
+   padding: 0;
+ }
+body *{
+   box-sizing: border-box;
+   font-size: 14px;
+   font-family: cursive;
+}
+ 
+.chat-container{
+   margin: 20px auto;
+   width: 400px;
+   border: solid #0ebeff 3px;
+   display:flex;
+   flex-direction: column;
+   height: 100%;
+}
+.upper-part{
+   display: flex;
+   padding: 5px;
+}
+.input{
+   flex-grow: 2;
+   border: solid #0ebeff 2px;
+   background-color: #d2ebfa;
+   min-height: 130px;
+   max-height: 300px;
+}
+.button-container{
+   display:flex;
+   flex-direction: column;
+}
+.btn{
+   cursor: pointer;
+   border: solid #0ebeff 2px;
+   padding: 5px auto;
+   background-color: #d2ebfa;
+   margin-left: 10px;
+   flex-grow: 1;
+   min-height: 35px;
+   max-height: 50px;
+   margin-bottom: 5px;
+}
+.bottom-part{
+   display:flex;
+   flex-direction: column;
+   background-color: #d2ebfa;
+   min-height: 100px;
+   margin: 5px;
+}
+.text{
+   position: relative;
+   display: flex;
+   align-items: center;
+   min-height: 30px;
+   width: fit-content;
+   max-width: 200px;
+   margin: 5px 5px 20px;
+   background: antiquewhite;
+   border-radius: 20px;
+   padding-left: 10px;
+   padding-right: 10px;
+}
+.text:before{
+   position: absolute;
+   content: '';
+   padding: 5px 5px;
+   border-radius: 50%;
+   background-color: #80badd;
+   color: blue;
+}
+.client-text{
+   margin-left: 70px;
+   align-self: flex-start;
+}
+.client-text:before{
+   content: 'you';
+   left: -50px;
+}
+.server-text{
+   margin-right: 80px;
+   align-self: flex-end;
+}
+.server-text:before{
+   content: 'server';
+   right: -60px;
+}
